@@ -8,51 +8,181 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-body-tertiary">
-  <nav class="navbar bg-primary border-bottom ">
-    <div class="container flex-wrap">
-      <a class="navbar-brand fw-bold" href="#">Bejalanan.com</a>
-      <div class="card bg-body">
-        <ul class="nav">
-          <li class="nav-item"><a class="nav-link text-black" href="#destinasi">Destinasi</a></li>
-          <li class="nav-item"><a class="nav-link text-black" href="#biaya">Hitung biaya</a></li>
-          <li class="nav-item"><a class="nav-link text-black" href="#tips">Tips</a></li>
-          <li class="nav-item"><a class="nav-link text-black" href="#Fasilitas">Fasilitas</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <header class="container py-5">
-      <!-- SLIDER FOTO -->
-    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="slot hero-foto"><img src="raja ampat.jpg" alt="Raja Ampat"></div>
-          <a href="#biaya" class="btn btn-kontak">Hitung biaya</a>
+    <nav class="navbar bg-primary border-bottom ">
+        <div class="container flex-wrap">
+            <a class="navbar-brand fw-bold" href="#">Bejalanan.com</a>
+            <div class="card bg-body">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-black" href="#destinasi">Destinasi</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="#biaya">Hitung biaya</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="#tips">Tips</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="#Fasilitas">Fasilitas</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="carousel-item">
-          <div class="slot hero-foto"><img src="labuan bajo.jpg" alt="Labuan Bajo"></div>
-          <a href="#biaya" class="btn btn-kontak">Hitung biaya</a>
+    </nav>
+    <header class="container py-5">
+        <!-- SLIDER FOTO -->
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="slot hero-foto"><img src="raja ampat.jpg" alt="Raja Ampat"></div>
+                    <a href="#biaya" class="btn btn-kontak">Hitung biaya</a>
+                </div>
+                <div class="carousel-item">
+                    <div class="slot hero-foto"><img src="labuan bajo.jpg" alt="Labuan Bajo"></div>
+                    <a href="#biaya" class="btn btn-kontak">Hitung biaya</a>
+                </div>
+                <div class="carousel-item">
+                    <div class="slot hero-foto"><img src="ubud.jpg" alt="Ubud"></div>
+                    <a href="#biaya" class="btn btn-kontak">Hitung biaya</a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span><span class="visually-hidden">Sebelumnya</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span><span class="visually-hidden">Berikutnya</span>
+            </button>
         </div>
-        <div class="carousel-item">
-          <div class="slot hero-foto"><img src="ubud.jpg" alt="Ubud"></div>
-          <a href="#biaya" class="btn btn-kontak">Hitung biaya</a>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span><span class="visually-hidden">Sebelumnya</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span><span class="visually-hidden">Berikutnya</span>
-      </button>
-    </div>
 
-    <!-- BANNER PENAWARAN -->
-    <section class="banner py-4">
-      <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
-        <h2 class="h3 mb-0 fw-normal">Rekomendasi Destinasi Favorit</h2>
-        <a class="btn btn-outline-light px-4" href="#destinasi">Lihat destinasi lainnya</a>
-      </div>
-    </section>
-  </header>
+        <!-- BANNER PENAWARAN -->
+        <section class="banner py-4">
+            <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
+                <h2 class="h3 mb-0 fw-normal">Rekomendasi Destinasi Favorit</h2>
+                <a class="btn btn-outline-light px-4" href="#destinasi">Lihat destinasi lainnya</a>
+            </div>
+        </section>
+    </header>
+    <main class="container">
+        <section id="destinasi" class="py-4">
+            <h2 class="fw-bold">Pilihan destinasi</h2>
+            <p class="text-body-secondary mb-4">Delapan tempat yang bisa jadi awal rencana liburanmu.</p>
+            <input id="cari" class="form-control mb-3" placeholder="Cari destinasi...">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="ratio ratio-4x3">
+                            <img src="raja ampat.jpg" alt="Pemandangan pulau karang di Raja Ampat"
+                                class="card-img-top object-fit-cover" loading="lazy">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 card-title">Raja Ampat</h3>
+                            <p class="small text-body-secondary mb-2">Papua Barat Daya · Waktu terbaik Okt–Apr</p>
+                            <p class="card-text">Snorkeling di gugusan pulau karang dengan laut yang sangat jernih.</p>
+                            <p class="fw-semibold mt-auto mb-0">Mulai Rp1.800.000/orang/hari</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="ratio ratio-4x3">
+                            <img src="labuan bajo.jpg" alt="Kapal wisata di perairan Labuan Bajo"
+                                class="card-img-top object-fit-cover" loading="lazy">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 card-title">Labuan Bajo</h3>
+                            <p class="small text-body-secondary mb-2">Nusa Tenggara Timur · Waktu terbaik Apr–Nov</p>
+                            <p class="card-text">Berlayar antarpulau, melihat komodo, dan menikmati Pulau Padar.</p>
+                            <p class="fw-semibold mt-auto mb-0">Mulai Rp1.200.000/orang/hari</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="ratio ratio-4x3">
+                            <img src="gunung bromo.jpg" alt="Matahari terbit di atas kawah Gunung Bromo"
+                                class="card-img-top object-fit-cover" loading="lazy">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 card-title">Gunung Bromo</h3>
+                            <p class="small text-body-secondary mb-2">Jawa Timur · Waktu terbaik Apr–Okt</p>
+                            <p class="card-text">Menyaksikan matahari terbit dari Penanjakan dan lautan pasir yang luas.</p>
+                            <p class="fw-semibold mt-auto mb-0">Mulai Rp600.000/orang/hari</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="ratio ratio-4x3">
+                            <img src="yogyakarta.jpg" alt="Candi Prambanan di Yogyakarta"
+                                class="card-img-top object-fit-cover" loading="lazy">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 card-title">Yogyakarta</h3>
+                            <p class="small text-body-secondary mb-2">DI Yogyakarta · Waktu terbaik Mei–Sep</p>
+                            <p class="card-text">Wisata budaya, candi bersejarah, keraton, dan kuliner khas yang murah.</p>
+                            <p class="fw-semibold mt-auto mb-0">Mulai Rp500.000/orang/hari</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="ratio ratio-4x3">
+                            <img src="ubud.jpg" alt="Sawah terasering di Ubud, Bali"
+                                class="card-img-top object-fit-cover" loading="lazy">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 card-title">Ubud</h3>
+                            <p class="small text-body-secondary mb-2">Bali · Waktu terbaik Apr–Okt</p>
+                            <p class="card-text">Sawah terasering, seni tradisional, dan suasana tenang di tengah hutan.</p>
+                            <p class="fw-semibold mt-auto mb-0">Mulai Rp900.000/orang/hari</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="ratio ratio-4x3">
+                            <img src="danau toba.jpg" alt="Danau Toba dan Pulau Samosir"
+                                class="card-img-top object-fit-cover" loading="lazy">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 card-title">Danau Toba</h3>
+                            <p class="small text-body-secondary mb-2">Sumatera Utara · Waktu terbaik Jun–Sep</p>
+                            <p class="card-text">Danau vulkanik terbesar di Asia Tenggara dengan budaya Batak di Pulau Samosir.</p>
+                            <p class="fw-semibold mt-auto mb-0">Mulai Rp550.000/orang/hari</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="ratio ratio-4x3">
+                            <img src="gili trawangan.jpg" alt="Pantai berpasir putih di Gili Trawangan"
+                                class="card-img-top object-fit-cover" loading="lazy">
+                        </div>
+                            <div class="card-body d-flex flex-column">
+                            <h3 class="h5 card-title">Gili Trawangan</h3>
+                            <p class="small text-body-secondary mb-2">Nusa Tenggara Barat · Waktu terbaik Mei–Sep</p>
+                            <p class="card-text">Pulau tanpa kendaraan bermotor, cocok untuk snorkeling bersama penyu dan bersepeda.</p>
+                            <p class="fw-semibold mt-auto mb-0">Mulai Rp850.000/orang/hari</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="ratio ratio-4x3">
+                            <img src="kawah ijen.jpg" alt="Danau kawah berwarna toska di Kawah Ijen"
+                                class="card-img-top object-fit-cover" loading="lazy">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="h5 card-title">Kawah Ijen</h3>
+                            <p class="small text-body-secondary mb-2">Jawa Timur · Waktu terbaik Apr–Okt</p>
+                            <p class="card-text">Pendakian dini hari untuk melihat api biru dan danau kawah berwarna toska.</p>
+                            <p class="fw-semibold mt-auto mb-0">Mulai Rp500.000/orang/hari</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
 </body>
 </html>

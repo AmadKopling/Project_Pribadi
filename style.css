@@ -5,3 +5,50 @@ section[id] { scroll-margin-top: 80px; }
 .navbar { position: sticky; top: 0; z-index: 1030; }
 
 :focus-visible { outline: 3px solid #ffc107; outline-offset: 2px; }
+
+/*Hero / slider*/
+.slot { background: #d9dee3; }
+.slot img { width: 100%; height: 100%; object-fit: cover; }
+
+.hero-foto {
+  position: relative;
+  height: 62vh;
+  min-height: 340px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.hero-foto::after { /* gradasi gelap agar tombol terbaca */
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(to top, rgba(0, 0, 0, .45), transparent 50%);
+}
+
+.btn-kontak {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 5;
+  background: #0b3d66;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 2rem;
+  padding: .45rem 1.1rem;
+}
+.btn-kontak:hover { background: #fff; color: #0b3d66; }
+
+.banner { background: linear-gradient(90deg, #0b2f4e, #0e4a7a); color: #fff; }
+
+/* Pencarian */
+#cari { max-width: 420px; border-radius: 2rem; padding: .6rem 1.2rem; }
+
+/* Kartu destinasi (bisa diklik) */
+#destinasi .card { transition: transform .2s ease, box-shadow .2s ease; }
+#destinasi .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 .75rem 1.5rem rgba(0, 0, 0, .15) !important;
+}
+#destinasi .card .ratio { overflow: hidden; }
+#destinasi .card img { transition: transform .4s ease; }
+#destinasi .card:hover img { transform: scale(1.08); }
