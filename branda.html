@@ -182,7 +182,92 @@
                 </div>
             </div>
         </section>
+
+        <section id="Fasilitas" class="pb-6">
+            <h2 class="fw-bold">Fasilitas</h2>
+            <p class="text-body-secondary mb-4">Berikut fasilitas yang include berdasarkan kelas</p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h3 class="h5">Hemat</h3>
+                    <ul class="list-unstyled text-body-secondary mb-0">
+                        <li>Transportasi standar</li>
+                        <li>Penginapan kamar berbagi</li>
+                        <li>Makan 2x sehari</li>
+                        <li>Asuransi dasar</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="h5">Standar</h3>
+                    <ul class="list-unstyled text-body-secondary mb-0">
+                        <li>Transportasi ber-AC</li>
+                        <li>Hotel bintang 3</li>
+                        <li>Makan 3x sehari</li>
+                        <li>Pemandu wisata</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="h5">Exclusive</h3>
+                    <ul class="list-unstyled text-body-secondary mb-0">
+                    <li>Mobil premium dengan sopir</li>
+                    <li>Hotel bintang 4-5 atau resort</li>
+                    <li>Pemandu pribadi</li>
+                    <li>Antar-jemput dan asuransi penuh</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="biaya" class="py-5">
+            <h2 class="fw-bold">Hitung perkiraan biaya</h2>
+            <p class="text-body-secondary mb-4">Pesan sekarang sebelum slot penuh</p>
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="dest" class="form-label fw-semibold">Destinasi</label>
+                                <select id="dest" class="form-select">
+                                    <option data-d="1800000" data-t="6000000">Raja Ampat</option>
+                                    <option data-d="1200000" data-t="3500000">Labuan Bajo</option>
+                                    <option data-d="600000" data-t="900000">Gunung Bromo</option>
+                                    <option data-d="500000" data-t="800000">Yogyakarta</option>
+                                    <option data-d="900000" data-t="1500000">Ubud</option>
+                                    <option data-d="550000" data-t="1600000">Danau Toba</option>
+                                    <option data-d="850000" data-t="1400000">Gili Trawangan</option>
+                                    <option data-d="500000" data-t="900000">Kawah Ijen</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="days" class="form-label fw-semibold">Lama perjalanan (hari)</label>
+                                <input id="days" type="number" min="1" max="30" value="4" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="ppl" class="form-label fw-semibold">Jumlah orang</label>
+                                <input id="ppl" type="number" min="1" max="20" value="2" class="form-control">
+                            </div>
+                            <div>
+                                <label for="style" class="form-label fw-semibold">Kelas</label>
+                                <select id="style" class="form-select">
+                                    <option value="0.7">Hemat</option>
+                                    <option value="1" selected>Standar</option>
+                                    <option value="1.6">Exclusive</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="bg-primary text-white rounded-4 p-4 h-100 d-flex flex-column justify-content-center" aria-live="polite">
+                                <div>Total</div>
+                                <div class="display-5 fw-bold" id="total">Rp0</div>
+                                <div id="detail" class="mt-2"></div>
+                                <a href="bayar.html" class="btn btn-warning btn-lg rounded-pill mt-4 align-self-start px-4">Bayar sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="small text-body-secondary mt-3">Angka bersifat perkiraan dari kisaran umum dan bisa berbeda saat musim liburan. Cek harga terbaru sebelum memesan.</p>
+        </section>
     </main>
-    
+
 </body>
 </html>
