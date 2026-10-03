@@ -52,3 +52,28 @@ section[id] { scroll-margin-top: 80px; }
 #destinasi .card .ratio { overflow: hidden; }
 #destinasi .card img { transition: transform .4s ease; }
 #destinasi .card:hover img { transform: scale(1.08); }
+
+/* Fasilitas */
+#Fasilitas { padding-bottom: 3rem; } 
+
+/* Kalkulator */
+#biaya .btn-warning { transition: transform .2s ease, box-shadow .2s ease; }
+#biaya .btn-warning:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .25);
+}
+
+/* Tips */
+#tips .border-start { transition: padding-left .2s ease; }
+#tips .border-start:hover { padding-left: 1.25rem !important; }
+
+/* Layar kecil (HP) */
+@media (max-width: 576px) {
+  .hero-foto { height: 45vh; min-height: 260px; }
+  .btn-kontak { right: 1rem; bottom: 1rem; font-size: .9rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}
