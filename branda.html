@@ -8,19 +8,48 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-body-tertiary">
-    <nav class="navbar bg-primary border-bottom ">
-        <div class="container flex-wrap">
+    <nav class="navbar bg-primary border-bottom">
+        <div class="container">
             <a class="navbar-brand fw-bold" href="#">Bejalanan.com</a>
-            <div class="card bg-body">
+
+            <!-- Menu desktop -->
+            <div class="card bg-body d-none d-md-block">
                 <ul class="nav">
-                    <li class="nav-item"><a class="nav-link text-black" href="#destinasi">Destinasi</a></li>
-                    <li class="nav-item"><a class="nav-link text-black" href="#biaya">Hitung biaya</a></li>
-                    <li class="nav-item"><a class="nav-link text-black" href="#tips">Tips</a></li>
-                    <li class="nav-item"><a class="nav-link text-black" href="#Fasilitas">Fasilitas</a></li>
+                <li class="nav-item"><a class="nav-link text-black" href="#destinasi">Destinasi</a></li>
+                <li class="nav-item"><a class="nav-link text-black" href="#biaya">Hitung biaya</a></li>
+                <li class="nav-item"><a class="nav-link text-black" href="#tips">Tips</a></li>
+                <li class="nav-item"><a class="nav-link text-black" href="#Fasilitas">Fasilitas</a></li>
                 </ul>
             </div>
+
+            <!-- Tombol pop up  -->
+            <button class="navbar-toggler d-md-none bg-body" type="button"
+                    data-bs-toggle="modal" data-bs-target="#menuModal" aria-label="Buka menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
     </nav>
+
+    <!-- Pop up menu HP -->
+    <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content rounded-4 border-0 shadow">
+                <div class="modal-header border-0 pb-0">
+                    <h2 class="modal-title h5 fw-bold" id="menuTitle">Menu</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="list-group list-group-flush text-center">
+                        <a class="list-group-item list-group-item-action py-3" href="#destinasi">Destinasi</a>
+                        <a class="list-group-item list-group-item-action py-3" href="#biaya">Hitung biaya</a>
+                        <a class="list-group-item list-group-item-action py-3" href="#tips">Tips</a>
+                        <a class="list-group-item list-group-item-action py-3" href="#Fasilitas">Fasilitas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header class="container py-5">
         <!-- SLIDER FOTO -->
         <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">

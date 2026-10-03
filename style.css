@@ -77,3 +77,5 @@ section[id] { scroll-margin-top: 80px; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
 }
+/* Tombol menu HP */
+.navbar-toggler { border: 0; }
