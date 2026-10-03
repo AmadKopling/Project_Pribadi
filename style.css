@@ -1,0 +1,7 @@
+/*Umum*/
+html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 80px; } 
+
+.navbar { position: sticky; top: 0; z-index: 1030; }
+
+:focus-visible { outline: 3px solid #ffc107; outline-offset: 2px; }
